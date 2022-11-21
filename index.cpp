@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 void shopBanner();
 void exitBanner();
 
@@ -22,42 +24,76 @@ int main()
 	switch (choice){
 		case 1:
 			cout<<"Excellent!" <<endl;
+            cout<<"How many orders of Menudo would you like to order?"<<endl;
+            cin>>menu;
+            sumOfOrders += menu * 40;
+            
 			
 			break;
 		case 2:
 		    cout<<"Excellent!"	<<endl;
-		    cin>>choice;
+            cout<<"How many orders of Afritada would you like to order?"<<endl;
+            cin>>menu;
+            sumOfOrders += menu * 50;
+		    
 		    break;
 		case 3:
 			cout<<"Excellent!" <<endl;
-			cin>>choice;
+            cout<<"How many orders of Adobo would you like to order?"<<endl;
+            cin>>menu;
+            sumOfOrders += menu * 60;
+			
+            
 			break;
 		case 4:
 			cout<<"Excellent!" <<endl;
-			cin>>choice;
+            cout<<"How many orders of Sinigang would you like to order?"<<endl;
+            cin>>menu;
+            sumOfOrders += menu * 40;
+            
+			
+           
 			break;
 		case 5:
 			cout<<"Excellent!" <<endl;
-			cin>>choice;
+            cout<<"How many orders of Dinakdakan would you like to order?"<<endl;
+            cin>>menu;
+            sumOfOrders += menu * 60;
+            
+		
+            
 			break;
 		case 6:
-				exitBanner();
-				quit = true;
+            cout<<"Thank you for ordering! Your total is P"<<sumOfOrders<<endl;
+            cout<<"Would you like to add more orders? Enter 1 for yes and 2 for no."<<endl;
+            cin>>addMore;
+            if (addMore == 1){
+                shopBanner();
+            }
+            else{
+                quit = true;
+            }
 			break;
 		default:
 			cout<<"Bad choice! Please try again!"<<endl;
 			
 			
 		}
-		if // try adding a feature where they cann add more from their order coma
+	    // try adding a feature where they cann add more from their order
+        
+
 				
-		}
+		
 	}
+
     
     while(quit == false);{
+        exitBanner();
+    }
+                                
     return 0;
 	}
-}
+
 void shopBanner()
 {
     std::cout << "____    __    ____  _______  __        ______   ______   .___  ___.  _______\n";
