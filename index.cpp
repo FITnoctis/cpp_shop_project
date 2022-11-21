@@ -1,5 +1,7 @@
 #include <iostream>
 
+using namespace std;
+
 void shopBanner();
 void exitBanner();
 
@@ -22,23 +24,44 @@ int main()
 	switch (choice){
 		case 1:
 			cout<<"Excellent!" <<endl;
+            cout<<"How many orders of Menudo would you like to order?"<<endl;
+            cin>>menu;
+            sumOfOrders += menu * 40;
+            
 			
 			break;
 		case 2:
 		    cout<<"Excellent!"	<<endl;
-		    cin>>choice;
+            cout<<"How many orders of Afritada would you like to order?"<<endl;
+            cin>>menu;
+            sumOfOrders += menu * 50;
+		    
 		    break;
 		case 3:
 			cout<<"Excellent!" <<endl;
-			cin>>choice;
+            cout<<"How many orders of Adobo would you like to order?"<<endl;
+            cin>>menu;
+            sumOfOrders += menu * 60;
+			
+            
 			break;
 		case 4:
 			cout<<"Excellent!" <<endl;
-			cin>>choice;
+            cout<<"How many orders of Sinigang would you like to order?"<<endl;
+            cin>>menu;
+            sumOfOrders += menu * 40;
+            
+			
+           
 			break;
 		case 5:
 			cout<<"Excellent!" <<endl;
-			cin>>choice;
+            cout<<"How many orders of Dinakdakan would you like to order?"<<endl;
+            cin>>menu;
+            sumOfOrders += menu * 60;
+            
+		
+            
 			break;
 		case 6:
 				exitBanner();
@@ -49,12 +72,16 @@ int main()
 			
 			
 		}
-		if // try adding a feature where they cann add more from their order coma
+	    // try adding a feature where they cann add more from their order
+        
+
 				
-		}
+		
 	}
+
     
     while(quit == false);{
+        cout<<"Your order Total is: P"<<sumOfOrders<<endl;                                      
     return 0;
 	}
 }
